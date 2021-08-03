@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3TE-GQ-o7o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Segmented View Controller-->
+        <scene sceneID="isF-dh-5hj">
+            <objects>
+                <viewController id="3TE-GQ-o7o" customClass="SegmentedViewController" customModule="SchoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g7j-cd-wFS"/>
+                        <viewControllerLayoutGuide type="bottom" id="AEJ-Zs-nth"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmJ-IZ-3WJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-lK-jdq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9v-VG-Kr4">
+                                <rect key="frame" x="20" y="44" width="374" height="531"/>
+                                <connections>
+                                    <segue destination="JTi-0B-DfM" kind="embed" id="B2u-IB-MIn"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIy-Wn-vuf">
+                                <rect key="frame" x="20" y="44" width="374" height="531"/>
+                                <connections>
+                                    <segue destination="mO4-OM-gLK" kind="embed" id="MZT-Gp-pOP"/>
+                                </connections>
+                            </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footerBack" translatesAutoresizingMaskIntoConstraints="NO" id="5yG-aP-roE">
+                                <rect key="frame" x="0.0" y="768" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RKj-8y-aK7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BLm-Zo-xi9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AEJ-Zs-nth" firstAttribute="top" secondItem="uIy-Wn-vuf" secondAttribute="bottom" constant="287" id="2ee-St-GGg"/>
+                            <constraint firstItem="AEJ-Zs-nth" firstAttribute="top" secondItem="OcM-lK-jdq" secondAttribute="bottom" id="7M0-Pu-GZf"/>
+                            <constraint firstItem="uIy-Wn-vuf" firstAttribute="leading" secondItem="kmJ-IZ-3WJ" secondAttribute="leadingMargin" id="9rD-7U-Vh3"/>
+                            <constraint firstItem="5yG-aP-roE" firstAttribute="leading" secondItem="kmJ-IZ-3WJ" secondAttribute="leading" id="CsB-j7-HG0"/>
+                            <constraint firstItem="k9v-VG-Kr4" firstAttribute="leading" secondItem="kmJ-IZ-3WJ" secondAttribute="leadingMargin" id="GEx-Rc-RXL"/>
+                            <constraint firstAttribute="trailing" secondItem="OcM-lK-jdq" secondAttribute="trailing" id="Iyg-PD-f1L"/>
+                            <constraint firstItem="uIy-Wn-vuf" firstAttribute="top" secondItem="g7j-cd-wFS" secondAttribute="bottom" id="UP5-Fq-R7E"/>
+                            <constraint firstAttribute="bottom" secondItem="5yG-aP-roE" secondAttribute="bottom" id="aWy-zu-sTK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uIy-Wn-vuf" secondAttribute="trailing" id="fh5-zb-OKx"/>
+                            <constraint firstAttribute="trailing" secondItem="5yG-aP-roE" secondAttribute="trailing" id="k3a-JB-8AS"/>
+                            <constraint firstItem="OcM-lK-jdq" firstAttribute="top" secondItem="kmJ-IZ-3WJ" secondAttribute="top" id="lWs-iZ-Z0m"/>
+                            <constraint firstItem="k9v-VG-Kr4" firstAttribute="top" secondItem="g7j-cd-wFS" secondAttribute="bottom" id="nP0-IH-z17"/>
+                            <constraint firstItem="AEJ-Zs-nth" firstAttribute="top" secondItem="k9v-VG-Kr4" secondAttribute="bottom" constant="287" id="prg-M3-ZBK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k9v-VG-Kr4" secondAttribute="trailing" id="u9a-vC-wSL"/>
+                            <constraint firstItem="OcM-lK-jdq" firstAttribute="leading" secondItem="kmJ-IZ-3WJ" secondAttribute="leading" id="yNj-yu-0wF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gbE-Ly-yJg">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="WbI-T2-rwC">
+                            <rect key="frame" x="116.5" y="5.5" width="181" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Attendance"/>
+                                <segment title="Holiday"/>
+                            </segments>
+                            <connections>
+                                <action selector="attendanceHolidaySwitch:" destination="3TE-GQ-o7o" eventType="valueChanged" id="eyC-1J-ca4"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="attendanceContainer" destination="k9v-VG-Kr4" id="dbA-au-VeK"/>
+                        <outlet property="attendanceHolidayControl" destination="WbI-T2-rwC" id="Jol-ri-w4u"/>
+                        <outlet property="holidayContainer" destination="uIy-Wn-vuf" id="0Fs-f2-QUm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYm-jy-gZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828.98550724637687" y="1579.6875"/>
+        </scene>
+        <!--Attendance View Controller-->
+        <scene sceneID="tbr-be-Cab">
+            <objects>
+                <viewController id="JTi-0B-DfM" customClass="AttendanceViewController" customModule="SchoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hB7-Sf-h9k"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCd-lB-fd5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJ4-pO-KN7">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="531"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWn-Po-7TR" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="531"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JTi-0B-DfM" id="IKt-XU-9bM"/>
+                                    <outlet property="delegate" destination="JTi-0B-DfM" id="uo7-dU-7xu"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A9s-fa-8mr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pWn-Po-7TR" firstAttribute="leading" secondItem="WJ4-pO-KN7" secondAttribute="leading" id="1m5-vw-HUr"/>
+                            <constraint firstItem="pWn-Po-7TR" firstAttribute="top" secondItem="WJ4-pO-KN7" secondAttribute="top" id="D7L-oB-bWc"/>
+                            <constraint firstAttribute="trailing" secondItem="pWn-Po-7TR" secondAttribute="trailing" id="QE6-9I-F8S"/>
+                            <constraint firstItem="oCd-lB-fd5" firstAttribute="top" secondItem="pWn-Po-7TR" secondAttribute="bottom" id="W8e-cw-lXu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="pWn-Po-7TR" id="RRG-Pg-EH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Spv-VD-dRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1225" y="2158"/>
+        </scene>
+        <!--Holiday View Controller-->
+        <scene sceneID="K51-tx-3gF">
+            <objects>
+                <viewController id="mO4-OM-gLK" customClass="HolidayViewController" customModule="SchoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="owJ-PN-3dJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eOO-fU-ij4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7p2-xs-TiR">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="531"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-Hh-2eE" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="531"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K3u-sz-NOf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wmc-Hh-2eE" firstAttribute="top" secondItem="7p2-xs-TiR" secondAttribute="top" id="GLq-ZU-IcO"/>
+                            <constraint firstItem="eOO-fU-ij4" firstAttribute="top" secondItem="wmc-Hh-2eE" secondAttribute="bottom" id="GYI-yd-tHH"/>
+                            <constraint firstAttribute="trailing" secondItem="wmc-Hh-2eE" secondAttribute="trailing" id="I4Y-Iz-6vq"/>
+                            <constraint firstItem="wmc-Hh-2eE" firstAttribute="leading" secondItem="7p2-xs-TiR" secondAttribute="leading" id="xQd-cn-Cbx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="wmc-Hh-2eE" id="AEl-Zb-6sQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofp-T3-beG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="2158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background2" width="375" height="812"/>
+        <image name="footerBack" width="374" height="132"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
