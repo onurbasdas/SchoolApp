@@ -10,6 +10,7 @@ class TimeTableViewController: UIViewController {
     @IBOutlet weak var user5View: UIView!
     
     var views = [UIView]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         views.append(user1View)
@@ -18,6 +19,7 @@ class TimeTableViewController: UIViewController {
         views.append(user4View)
         views.append(user5View)
         hideOtherViews(view: user1View)
+        print("ahmet berk hoşgeldin")
     }
     
     @IBAction func userSwitch(_ sender: Any) {
