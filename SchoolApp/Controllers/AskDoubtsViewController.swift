@@ -14,6 +14,8 @@ class AskDoubtsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureDropdowns()
+        selectTeacherDropdown.selectedRowColor = UIColor(named: "darkBlue")!
+        selectSubjectDropdown.selectedRowColor = UIColor(named: "darkBlue")!
     }
     
     func configureDropdowns() {
@@ -30,7 +32,6 @@ class AskDoubtsViewController: UIViewController {
         }
     }
     @IBAction func sendDoubt(_ sender: Any) {
-        //Deneme
         print("Teacher: \(teacherDropdownSelected)")
         print("Subject: \(subjectDropdownSelected)")
         print("Title: \(titleInput.text!)")
