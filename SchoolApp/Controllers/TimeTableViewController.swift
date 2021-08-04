@@ -19,6 +19,7 @@ class TimeTableViewController: UIViewController {
         views.append(user4View)
         views.append(user5View)
         hideOtherViews(view: user1View)
+        print("ahmet berk hoşgeldin")
     }
     
     @IBAction func userSwitch(_ sender: Any) {
