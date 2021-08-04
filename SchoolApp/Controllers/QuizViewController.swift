@@ -34,6 +34,7 @@ class QuizViewController: UIViewController {
         getQuiz()
     }
     
+    
     func getQuiz() {
         DispatchQueue.main.async {
             Service.getQuizData { [self] result in
