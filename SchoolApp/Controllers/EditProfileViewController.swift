@@ -20,6 +20,7 @@ class EditProfileViewController: UIViewController {
         super.viewDidLoad()
         getWallpaperInUserDefaults()
         conf()
+        print("deneme")
     }
     
     func conf() {
