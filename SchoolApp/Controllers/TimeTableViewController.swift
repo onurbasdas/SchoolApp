@@ -10,6 +10,7 @@ class TimeTableViewController: UIViewController {
     @IBOutlet weak var user5View: UIView!
     
     var views = [UIView]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         views.append(user1View)
