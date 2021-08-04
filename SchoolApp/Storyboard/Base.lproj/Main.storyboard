@@ -155,7 +155,7 @@
                         <segue destination="hzC-I7-bE4" kind="show" identifier="AttendanceSegue" id="AUm-Ft-DIj"/>
                         <segue destination="Reo-us-1ME" kind="show" identifier="ProfileSegue" id="nDJ-Ki-Ilh"/>
                         <segue destination="Ayc-z3-zg6" kind="show" identifier="AssignmentSegue" id="SXE-fP-JB8"/>
-                        <segue destination="LzY-L1-gfi" kind="show" identifier="AskDoubtSegue" id="YFp-4v-WGU"/>
+                        <segue destination="LzY-L1-gfi" kind="show" identifier="AskDoubtsSegue" id="YFp-4v-WGU"/>
                         <segue destination="TLn-TN-yhE" kind="show" identifier="SchoolGallerySegue" id="XGw-gE-kPx"/>
                     </connections>
                 </viewController>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="-752" y="1276"/>
         </scene>
-        <!--AskDoubt-->
+        <!--AskDoubts-->
         <scene sceneID="Chb-F4-WJq">
             <objects>
-                <viewControllerPlaceholder storyboardName="AskDoubt" id="LzY-L1-gfi" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AskDoubts" id="LzY-L1-gfi" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Fgz-aK-3az"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqG-vb-Enc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C7117A4608CCC59CC0570D8 /* Pods_SchoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3869D14829B41BE7AA300C4 /* Pods_SchoolApp.framework */; };
+		4014411B26BADF5B005CCEB6 /* AskDoubtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4014411A26BADF5B005CCEB6 /* AskDoubtsViewController.swift */; };
 		406FDD0E2681E10C00D76FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD0D2681E10C00D76FF9 /* AppDelegate.swift */; };
 		406FDD102681E10C00D76FF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD0F2681E10C00D76FF9 /* SceneDelegate.swift */; };
 		406FDD122681E10C00D76FF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD112681E10C00D76FF9 /* LoginViewController.swift */; };
@@ -41,7 +42,7 @@
 		40910AC226B436170044AF6A /* AssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910AC026B436170044AF6A /* AssignmentTableViewCell.swift */; };
 		40910AC326B436170044AF6A /* AssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40910AC126B436170044AF6A /* AssignmentTableViewCell.xib */; };
 		40910AC526B43A300044AF6A /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910AC426B43A300044AF6A /* AssignmentViewController.swift */; };
-		40910AC726B454EB0044AF6A /* AskDoubt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40910AC626B454EB0044AF6A /* AskDoubt.storyboard */; };
+		40910AC726B454EB0044AF6A /* AskDoubts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40910AC626B454EB0044AF6A /* AskDoubts.storyboard */; };
 		40910AC926B456870044AF6A /* SchoolGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40910AC826B456870044AF6A /* SchoolGallery.storyboard */; };
 		40910ACB26B458190044AF6A /* SchoolGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910ACA26B458190044AF6A /* SchoolGalleryViewController.swift */; };
 		40910ACE26B459B70044AF6A /* SchoolGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910ACC26B459B60044AF6A /* SchoolGalleryCollectionViewCell.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4014411A26BADF5B005CCEB6 /* AskDoubtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDoubtsViewController.swift; sourceTree = "<group>"; };
 		406FDD0A2681E10C00D76FF9 /* SchoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406FDD0D2681E10C00D76FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406FDD0F2681E10C00D76FF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		40910AC026B436170044AF6A /* AssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		40910AC126B436170044AF6A /* AssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentTableViewCell.xib; sourceTree = "<group>"; };
 		40910AC426B43A300044AF6A /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
-		40910AC626B454EB0044AF6A /* AskDoubt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskDoubt.storyboard; sourceTree = "<group>"; };
+		40910AC626B454EB0044AF6A /* AskDoubts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskDoubts.storyboard; sourceTree = "<group>"; };
 		40910AC826B456870044AF6A /* SchoolGallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SchoolGallery.storyboard; sourceTree = "<group>"; };
 		40910ACA26B458190044AF6A /* SchoolGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGalleryViewController.swift; sourceTree = "<group>"; };
 		40910ACC26B459B60044AF6A /* SchoolGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				40910AAB26B29E8B0044AF6A /* DateSheetViewController.swift */,
 				40910AC426B43A300044AF6A /* AssignmentViewController.swift */,
 				40910ACA26B458190044AF6A /* SchoolGalleryViewController.swift */,
+				4014411A26BADF5B005CCEB6 /* AskDoubtsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,7 +230,7 @@
 				40910ABA26B432CA0044AF6A /* Attendance.storyboard */,
 				40910ABC26B433C60044AF6A /* Profile.storyboard */,
 				40910ABE26B4351B0044AF6A /* Assignment.storyboard */,
-				40910AC626B454EB0044AF6A /* AskDoubt.storyboard */,
+				40910AC626B454EB0044AF6A /* AskDoubts.storyboard */,
 				40910AC826B456870044AF6A /* SchoolGallery.storyboard */,
 			);
 			path = Storyboard;
@@ -261,7 +264,6 @@
 				406FDD062681E10C00D76FF9 /* Sources */,
 				406FDD072681E10C00D76FF9 /* Frameworks */,
 				406FDD082681E10C00D76FF9 /* Resources */,
-				C231386DCEEA5B4075E8A663 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,7 +317,7 @@
 				406FDD172681E11600D76FF9 /* Assets.xcassets in Resources */,
 				40910AC326B436170044AF6A /* AssignmentTableViewCell.xib in Resources */,
 				40910AB326B2A8B50044AF6A /* TimeTable.storyboard in Resources */,
-				40910AC726B454EB0044AF6A /* AskDoubt.storyboard in Resources */,
+				40910AC726B454EB0044AF6A /* AskDoubts.storyboard in Resources */,
 				40910AB126B2A7030044AF6A /* DateSheet.storyboard in Resources */,
 				40910ABF26B4351B0044AF6A /* Assignment.storyboard in Resources */,
 				40910AAF26B29F900044AF6A /* Auth.storyboard in Resources */,
@@ -331,23 +333,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C231386DCEEA5B4075E8A663 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SchoolApp/Pods-SchoolApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SchoolApp/Pods-SchoolApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SchoolApp/Pods-SchoolApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DF594BEC0421F4A06A82A783 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +373,7 @@
 				40910ACE26B459B70044AF6A /* SchoolGalleryCollectionViewCell.swift in Sources */,
 				406FDD432695060000D76FF9 /* EditProfileViewController.swift in Sources */,
 				406FDD41268636EC00D76FF9 /* MainNavigationController.swift in Sources */,
+				4014411B26BADF5B005CCEB6 /* AskDoubtsViewController.swift in Sources */,
 				406FDD122681E10C00D76FF9 /* LoginViewController.swift in Sources */,
 				406FDD3C26849A6E00D76FF9 /* Service.swift in Sources */,
 				406FDD0E2681E10C00D76FF9 /* AppDelegate.swift in Sources */,
