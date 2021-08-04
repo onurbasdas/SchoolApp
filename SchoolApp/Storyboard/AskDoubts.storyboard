@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-at-TYy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-at-TYy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjo-cD-Zh5">
                                 <rect key="frame" x="30" y="74" width="85" height="15"/>
@@ -106,13 +105,17 @@
                             <constraint firstItem="mGW-f4-LnD" firstAttribute="trailing" secondItem="oqf-Hm-nff" secondAttribute="trailing" constant="30" id="2F6-3d-jSe"/>
                             <constraint firstItem="X9x-Ie-6x5" firstAttribute="top" secondItem="yCT-UE-qXX" secondAttribute="bottom" constant="8" symbolic="YES" id="2xm-98-GH6"/>
                             <constraint firstItem="vbK-8g-w84" firstAttribute="leading" secondItem="mGW-f4-LnD" secondAttribute="leading" constant="30" id="3ru-y9-nzz"/>
+                            <constraint firstItem="PG9-at-TYy" firstAttribute="leading" secondItem="mGW-f4-LnD" secondAttribute="leading" id="6yB-Lx-pti"/>
                             <constraint firstItem="jf3-gr-xT9" firstAttribute="leading" secondItem="mGW-f4-LnD" secondAttribute="leading" constant="30" id="AEd-oH-hOo"/>
+                            <constraint firstAttribute="bottom" secondItem="PG9-at-TYy" secondAttribute="bottom" id="AQ1-40-fe6"/>
                             <constraint firstItem="mGW-f4-LnD" firstAttribute="trailing" secondItem="zeh-ln-0Pp" secondAttribute="trailing" constant="30" id="Bbl-xL-kLW"/>
                             <constraint firstItem="9cH-r9-fVd" firstAttribute="leading" secondItem="MP2-3T-Ld9" secondAttribute="leadingMargin" constant="10" id="DPB-bV-en2"/>
                             <constraint firstItem="zeh-ln-0Pp" firstAttribute="top" secondItem="V2B-EV-nLK" secondAttribute="bottom" constant="8" symbolic="YES" id="Dy3-o3-Kom"/>
+                            <constraint firstItem="PG9-at-TYy" firstAttribute="top" secondItem="MP2-3T-Ld9" secondAttribute="top" id="Gfv-Db-WTh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9cH-r9-fVd" secondAttribute="trailing" constant="10" id="OOo-ms-794"/>
                             <constraint firstItem="zeh-ln-0Pp" firstAttribute="top" secondItem="V2B-EV-nLK" secondAttribute="bottom" constant="8" symbolic="YES" id="OSx-ET-AgI"/>
                             <constraint firstItem="oqf-Hm-nff" firstAttribute="top" secondItem="X9x-Ie-6x5" secondAttribute="bottom" constant="8" symbolic="YES" id="Up5-Nm-Thn"/>
+                            <constraint firstItem="PG9-at-TYy" firstAttribute="trailing" secondItem="mGW-f4-LnD" secondAttribute="trailing" id="Yq9-r5-d8Z"/>
                             <constraint firstItem="V2B-EV-nLK" firstAttribute="leading" secondItem="mGW-f4-LnD" secondAttribute="leading" constant="30" id="Zg1-aj-PrV"/>
                             <constraint firstItem="Kjo-cD-Zh5" firstAttribute="top" secondItem="MP2-3T-Ld9" secondAttribute="topMargin" constant="30" id="aat-3F-Cml"/>
                             <constraint firstItem="oqf-Hm-nff" firstAttribute="leading" secondItem="mGW-f4-LnD" secondAttribute="leading" constant="30" id="fQ6-J0-KZf"/>
