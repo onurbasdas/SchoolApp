@@ -2,6 +2,7 @@ import Foundation
 import Alamofire
 
 class Service {
+    
     static func loadMenuItems() -> [MenuItems] {
         return [
             (MenuItems(image: #imageLiteral(resourceName: "ic_quiz"), label: "Play Quiz",segue: "PlayQuizSegue")),
@@ -18,7 +19,8 @@ class Service {
             (MenuItems(image: #imageLiteral(resourceName: "ic_logout"), label: "Logout",segue: "LogoutSegue"))
         ]
     }
-    static func getQuizData(completion:@escaping([Question])->()){
+    
+    static func getQuizData(completion: @escaping ([Question]) -> ()) {
         AF.request(Constant.QuizURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
             guard let data = response.data else { return }
             do {
@@ -30,7 +32,7 @@ class Service {
         }
     }
     
-    static func getTimeTablePosts(completion:@escaping([TimeTablePost])->()){
+    static func getTimeTablePosts(completion: @escaping ([TimeTablePost]) -> ()) {
         AF.request(Constant.TimeTableURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
             guard let data = response.data else { return }
             do {
@@ -42,7 +44,7 @@ class Service {
         }
     }
     
-    static func getToDoItems(completion:@escaping([ToDoItem])->()){
+    static func getToDoItems(completion: @escaping ([ToDoItem]) -> ()) {
         AF.request(Constant.ToDoURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
             guard let data = response.data else { return }
             do {
@@ -54,7 +56,7 @@ class Service {
         }
     }
     
-    static func getGalleryImages(completion:@escaping([GalleryImage])->()){
+    static func getGalleryImages(completion: @escaping ([GalleryImage]) -> ()) {
         AF.request(Constant.GalleryURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
             guard let data = response.data else { return }
             do {

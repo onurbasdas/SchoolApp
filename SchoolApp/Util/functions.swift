@@ -2,16 +2,16 @@ import Foundation
 import UIKit
 
 extension UITextField {
-    func addBottomBorder(){
+    func addBottomBorder() {
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width, height: 1)
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 10, width: self.frame.size.width, height: 1)
         bottomLine.backgroundColor = UIColor.gray.cgColor
         borderStyle = .none
         layer.addSublayer(bottomLine)
     }
 }
 
-extension UIViewController{
+extension UIViewController {
     func makeAlert(titleInput : String, messageInput : String) {
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
         alert.view.tintColor = UIColor.systemRed

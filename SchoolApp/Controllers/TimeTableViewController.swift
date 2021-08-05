@@ -13,13 +13,23 @@ class TimeTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewAppend()
+        configureUI()
+    }
+    
+    func configureUI() {
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        userSegmentedControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
+    }
+    
+    func viewAppend() {
         views.append(user1View)
         views.append(user2View)
         views.append(user3View)
         views.append(user4View)
         views.append(user5View)
         hideOtherViews(view: user1View)
-        print("ahmet berk hoşgeldin")
     }
     
     @IBAction func userSwitch(_ sender: Any) {

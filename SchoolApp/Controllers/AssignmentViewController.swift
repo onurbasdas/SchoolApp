@@ -32,5 +32,8 @@ class AssignmentViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.userIDLabel.text = String(assignments[indexPath.row].userId)
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
 
 }
