@@ -157,6 +157,7 @@
                         <segue destination="Ayc-z3-zg6" kind="show" identifier="AssignmentSegue" id="SXE-fP-JB8"/>
                         <segue destination="LzY-L1-gfi" kind="show" identifier="AskDoubtsSegue" id="YFp-4v-WGU"/>
                         <segue destination="TLn-TN-yhE" kind="show" identifier="SchoolGallerySegue" id="XGw-gE-kPx"/>
+                        <segue destination="Ksm-ZC-Gt1" kind="show" identifier="FeesDueSegue" id="ncl-8d-sMo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftj-2O-USz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,6 +203,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xj4-Ca-V8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-314" y="1276"/>
+        </scene>
+        <!--Fees-->
+        <scene sceneID="0fY-5v-we9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fees" id="Ksm-ZC-Gt1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wxL-3B-ibw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ozk-id-vht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="1276"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="zi1-8z-xQm">
