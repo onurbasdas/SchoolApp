@@ -11,6 +11,7 @@
 		4014412326BC2116005CCEB6 /* Fees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4014412226BC2116005CCEB6 /* Fees.storyboard */; };
 		4014412526BC2191005CCEB6 /* FeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4014412426BC2191005CCEB6 /* FeesViewController.swift */; };
 		4014412726BC219F005CCEB6 /* PayOnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4014412626BC219F005CCEB6 /* PayOnlineViewController.swift */; };
+		4014412926BD346A005CCEB6 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4014412826BD3469005CCEB6 /* ChangePassword.storyboard */; };
 		406FDD0E2681E10C00D76FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD0D2681E10C00D76FF9 /* AppDelegate.swift */; };
 		406FDD102681E10C00D76FF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD0F2681E10C00D76FF9 /* SceneDelegate.swift */; };
 		406FDD122681E10C00D76FF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FDD112681E10C00D76FF9 /* LoginViewController.swift */; };
@@ -62,6 +63,7 @@
 		4014412226BC2116005CCEB6 /* Fees.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fees.storyboard; sourceTree = "<group>"; };
 		4014412426BC2191005CCEB6 /* FeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesViewController.swift; sourceTree = "<group>"; };
 		4014412626BC219F005CCEB6 /* PayOnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayOnlineViewController.swift; sourceTree = "<group>"; };
+		4014412826BD3469005CCEB6 /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
 		406FDD0A2681E10C00D76FF9 /* SchoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406FDD0D2681E10C00D76FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406FDD0F2681E10C00D76FF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				40910AC626B454EB0044AF6A /* AskDoubts.storyboard */,
 				40910AC826B456870044AF6A /* SchoolGallery.storyboard */,
 				4014412226BC2116005CCEB6 /* Fees.storyboard */,
+				4014412826BD3469005CCEB6 /* ChangePassword.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				406FDD1A2681E11600D76FF9 /* LaunchScreen.storyboard in Resources */,
+				4014412926BD346A005CCEB6 /* ChangePassword.storyboard in Resources */,
 				40910AC926B456870044AF6A /* SchoolGallery.storyboard in Resources */,
 				40910ABD26B433C60044AF6A /* Profile.storyboard in Resources */,
 				406FDD172681E11600D76FF9 /* Assets.xcassets in Resources */,
