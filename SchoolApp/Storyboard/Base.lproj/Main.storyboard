@@ -158,6 +158,8 @@
                         <segue destination="LzY-L1-gfi" kind="show" identifier="AskDoubtsSegue" id="YFp-4v-WGU"/>
                         <segue destination="TLn-TN-yhE" kind="show" identifier="SchoolGallerySegue" id="XGw-gE-kPx"/>
                         <segue destination="Ksm-ZC-Gt1" kind="show" identifier="FeesDueSegue" id="ncl-8d-sMo"/>
+                        <segue destination="hNP-9J-LZ0" kind="show" identifier="ChangePasswordSegue" id="KrF-on-kMI"/>
+                        <segue destination="PVC-pw-EsD" kind="show" identifier="ResultsSegue" id="udk-9p-W2B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftj-2O-USz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,6 +215,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozk-id-vht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-137" y="1276"/>
+        </scene>
+        <!--ChangePassword-->
+        <scene sceneID="mI6-Ml-Wfs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChangePassword" id="hNP-9J-LZ0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hVZ-kS-gNQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYv-yw-c8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="1276"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="ZP4-Rc-yWO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Results" id="PVC-pw-EsD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uf6-ex-yX3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exO-Iy-QEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="1276"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="zi1-8z-xQm">
