@@ -4,7 +4,7 @@ import Kingfisher
 class SchoolGalleryViewController: UIViewController {
     
     var galleryImages = [GalleryImage]()
-
+    
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -19,11 +19,10 @@ class SchoolGalleryViewController: UIViewController {
             Service.getGalleryImages { [self] result in
                 galleryImages.append(contentsOf: result)
                 galleryCollectionView.reloadData()
-                print(result)
             }
         }
     }
-
+    
 }
 
 extension SchoolGalleryViewController: UICollectionViewDelegate,UICollectionViewDataSource {
@@ -33,7 +32,7 @@ extension SchoolGalleryViewController: UICollectionViewDelegate,UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = galleryCollectionView.dequeueReusableCell(withReuseIdentifier: "SchoolGalleryCollectionViewCell", for: indexPath) as! SchoolGalleryCollectionViewCell
-       cell.imageView.kf.setImage(with: URL(string: galleryImages[indexPath.item].download_url))
+        cell.imageView.kf.setImage(with: URL(string: galleryImages[indexPath.item].download_url))
         return cell
     }
 }

@@ -9,18 +9,17 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var admissionclassInput: UITextField!
     @IBOutlet weak var oldadmissionnoInput: UITextField!
     @IBOutlet weak var dateOfAdmissionInput: UITextField!
-    @IBOutlet weak var dateOfBirthInput: UITextField!
     @IBOutlet weak var parentMailIDInput: UITextField!
     @IBOutlet weak var motherNameInput: UITextField!
     @IBOutlet weak var fatherNameInput: UITextField!
     @IBOutlet weak var permanantAddressInput: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         getWallpaperInUserDefaults()
         conf()
-        print("deneme")
     }
     
     func conf() {
@@ -29,7 +28,6 @@ class EditProfileViewController: UIViewController {
         admissionclassInput.addBottomBorder()
         oldadmissionnoInput.addBottomBorder()
         dateOfAdmissionInput.addBottomBorder()
-        dateOfBirthInput.addBottomBorder()
         parentMailIDInput.addBottomBorder()
         motherNameInput.addBottomBorder()
         fatherNameInput.addBottomBorder()

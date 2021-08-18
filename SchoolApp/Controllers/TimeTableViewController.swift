@@ -10,8 +10,20 @@ class TimeTableViewController: UIViewController {
     @IBOutlet weak var user5View: UIView!
     
     var views = [UIView]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewAppend()
+        configureUI()
+    }
+    
+    func configureUI() {
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        userSegmentedControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
+    }
+    
+    func viewAppend() {
         views.append(user1View)
         views.append(user2View)
         views.append(user3View)

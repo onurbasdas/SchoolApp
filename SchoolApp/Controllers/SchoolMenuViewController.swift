@@ -38,6 +38,8 @@ class SchoolMenuViewController: UIViewController{
     }
     
     @IBAction func feesDueClick(_ sender: Any) {
+        navigationController?.isNavigationBarHidden = false
+        performSegue(withIdentifier: "FeesDueSegue", sender: nil)
     }
     
     func getWallpaperInUserDefaults() {

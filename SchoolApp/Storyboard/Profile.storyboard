@@ -11,7 +11,6 @@
         <!--Edit Profile View Controller-->
         <scene sceneID="tAh-zW-078">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P2o-YJ-ipU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="k6Y-U3-cA8" customClass="EditProfileViewController" customModule="SchoolApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sBL-aU-YI2"/>
@@ -31,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TC Kimlik No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-gz-rFf">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="15"/>
@@ -162,12 +161,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgw-Zn-Ybw">
                                 <rect key="frame" x="233" y="292" width="161" height="62"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esF-K2-BYo">
-                                        <rect key="frame" x="0.0" y="0.0" width="161" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAx-wK-HTl">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -175,10 +168,19 @@
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-VT-xeS">
+                                        <rect key="frame" x="0.0" y="-70" width="170" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="216" id="dVW-rB-CCi"/>
+                                        </constraints>
+                                    </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="dQf-VT-xeS" firstAttribute="top" secondItem="Jgw-Zn-Ybw" secondAttribute="top" constant="-70" id="7p3-Xm-7sW"/>
+                                    <constraint firstAttribute="trailing" secondItem="dQf-VT-xeS" secondAttribute="trailing" constant="-9" id="Xs5-V0-uqy"/>
                                     <constraint firstAttribute="width" constant="161" id="dou-i2-Qov"/>
+                                    <constraint firstItem="dQf-VT-xeS" firstAttribute="leading" secondItem="Jgw-Zn-Ybw" secondAttribute="leading" id="dsP-UD-n3F"/>
                                     <constraint firstAttribute="height" constant="62" id="eaD-w0-gYQ"/>
                                 </constraints>
                             </view>
@@ -351,7 +353,7 @@
                         <outlet property="academicyearInput" destination="0bc-6b-cW8" id="aXj-vp-IcY"/>
                         <outlet property="admissionclassInput" destination="9Yt-Qp-zx5" id="mYC-Ha-y2o"/>
                         <outlet property="dateOfAdmissionInput" destination="zui-PQ-kCi" id="5DW-oG-TvI"/>
-                        <outlet property="dateOfBirthInput" destination="esF-K2-BYo" id="20t-yx-5zG"/>
+                        <outlet property="datePicker" destination="dQf-VT-xeS" id="e7c-HN-YCP"/>
                         <outlet property="fatherNameInput" destination="6ZY-F0-XRG" id="15Y-TM-qWm"/>
                         <outlet property="motherNameInput" destination="X2L-JO-3eS" id="VHn-eX-Kfw"/>
                         <outlet property="oldadmissionnoInput" destination="30w-hh-HTI" id="PM9-1a-5UT"/>
@@ -361,8 +363,9 @@
                         <outlet property="tckimlikInput" destination="94j-9b-gGX" id="y8G-ad-QkN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2o-YJ-ipU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="1580"/>
+            <point key="canvasLocation" x="1114.4927536231885" y="1579.6875"/>
         </scene>
     </scenes>
     <resources>
