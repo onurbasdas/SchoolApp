@@ -18,12 +18,14 @@ class ChangePasswordViewController: UIViewController {
     }
     func checkPasswords() {
         if newPasswordText.text == confirmPasswordText.text {
-            newPasswordText.backgroundColor = .green
-            confirmPasswordText.backgroundColor = .green
+            newPasswordText.addColoredBottomBorder(color: .green)
+            confirmPasswordText.addColoredBottomBorder(color: .green)
         }
         else{
-            newPasswordText.backgroundColor = .red
-            confirmPasswordText.backgroundColor = .red
+            //newPasswordText.backgroundColor = .red
+            //confirmPasswordText.backgroundColor = .red
+            newPasswordText.addColoredBottomBorder(color: .red)
+            confirmPasswordText.addColoredBottomBorder(color: .red)
         }
     }
     @IBAction func newPasswordChanged(_ sender: Any) {
@@ -31,6 +33,9 @@ class ChangePasswordViewController: UIViewController {
     }
     @IBAction func confirmPasswordChanged(_ sender: Any) {
         checkPasswords()
+    }
+    @IBAction func changePasswordClick(_ sender: Any) {
+        makeAlert(titleInput: "Şifre Değişimi", messageInput: "İşlem başarıyla tamamlandı")
     }
 }
 

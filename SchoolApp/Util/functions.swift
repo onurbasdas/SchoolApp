@@ -9,6 +9,13 @@ extension UITextField {
         borderStyle = .none
         layer.addSublayer(bottomLine)
     }
+    func addColoredBottomBorder(color:UIColor) {
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 10, width: self.frame.size.width, height: 1)
+        bottomLine.backgroundColor = color.cgColor
+        borderStyle = .none
+        layer.addSublayer(bottomLine)
+    }
 }
 
 extension UIViewController {
