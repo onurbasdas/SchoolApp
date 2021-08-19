@@ -67,4 +67,28 @@ class Service {
             }
         }
     }
+    
+    static func getRickAndMortys(completion: @escaping ([RickAndMorty]) -> ()) {
+        AF.request(Constant.RickAndMorty, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
+            guard let data = response.data else { return }
+            do {
+                let datalist = try JSONDecoder().decode(RickAndMortys.self, from: data)
+                completion(datalist.results)
+            } catch  {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    static func getDrinks(completion: @escaping ([Drink]) -> ()) {
+        AF.request(Constant.DrinksURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
+            guard let data = response.data?[0...19] else { return }
+            do {
+                let datalist = try JSONDecoder().decode([Drink].self, from: data)
+                completion(datalist)
+            } catch  {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }

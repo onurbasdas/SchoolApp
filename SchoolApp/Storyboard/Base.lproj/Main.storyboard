@@ -160,6 +160,7 @@
                         <segue destination="Ksm-ZC-Gt1" kind="show" identifier="FeesDueSegue" id="ncl-8d-sMo"/>
                         <segue destination="hNP-9J-LZ0" kind="show" identifier="ChangePasswordSegue" id="KrF-on-kMI"/>
                         <segue destination="PVC-pw-EsD" kind="show" identifier="ResultsSegue" id="udk-9p-W2B"/>
+                        <segue destination="1ZC-Il-JA7" kind="show" identifier="EventsSegue" id="U0t-NX-zhl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftj-2O-USz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -235,6 +236,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exO-Iy-QEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="220" y="1276"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="iJQ-vj-ec5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="1ZC-Il-JA7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1fy-D7-mrc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJW-ob-ROs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="1276"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="zi1-8z-xQm">
