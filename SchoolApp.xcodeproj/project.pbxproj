@@ -52,6 +52,12 @@
 		40910ACE26B459B70044AF6A /* SchoolGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910ACC26B459B60044AF6A /* SchoolGalleryCollectionViewCell.swift */; };
 		40910ACF26B459B70044AF6A /* SchoolGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40910ACD26B459B70044AF6A /* SchoolGalleryCollectionViewCell.xib */; };
 		40910AD126B45A740044AF6A /* GalleryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40910AD026B45A740044AF6A /* GalleryImage.swift */; };
+		40A3B57326CE87EF00DBA195 /* RickAndMortys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57226CE87EF00DBA195 /* RickAndMortys.swift */; };
+		40A3B57526CE880D00DBA195 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A3B57426CE880D00DBA195 /* Events.storyboard */; };
+		40A3B57726CE882F00DBA195 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57626CE882F00DBA195 /* EventsViewController.swift */; };
+		40A3B57C26CE91B000DBA195 /* RickAndMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57A26CE91B000DBA195 /* RickAndMortyTableViewCell.swift */; };
+		40A3B57D26CE91B000DBA195 /* RickAndMortyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A3B57B26CE91B000DBA195 /* RickAndMortyTableViewCell.xib */; };
+		40A3B57F26CE99A100DBA195 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57E26CE99A100DBA195 /* Drinks.swift */; };
 		40D6084126972B8D00527FB0 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6084026972B8D00527FB0 /* AttendanceViewController.swift */; };
 		40FC36E0269834FF009C7E0A /* HolidayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC36DF269834FF009C7E0A /* HolidayViewController.swift */; };
 		40FC36E2269EC2EF009C7E0A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC36E1269EC2EF009C7E0A /* Constant.swift */; };
@@ -107,6 +113,12 @@
 		40910ACC26B459B60044AF6A /* SchoolGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		40910ACD26B459B70044AF6A /* SchoolGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		40910AD026B45A740044AF6A /* GalleryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImage.swift; sourceTree = "<group>"; };
+		40A3B57226CE87EF00DBA195 /* RickAndMortys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortys.swift; sourceTree = "<group>"; };
+		40A3B57426CE880D00DBA195 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		40A3B57626CE882F00DBA195 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		40A3B57A26CE91B000DBA195 /* RickAndMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTableViewCell.swift; sourceTree = "<group>"; };
+		40A3B57B26CE91B000DBA195 /* RickAndMortyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RickAndMortyTableViewCell.xib; sourceTree = "<group>"; };
+		40A3B57E26CE99A100DBA195 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		40D6084026972B8D00527FB0 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
 		40FC36DF269834FF009C7E0A /* HolidayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayViewController.swift; sourceTree = "<group>"; };
 		40FC36E1269EC2EF009C7E0A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -192,6 +204,8 @@
 				40910AC126B436170044AF6A /* AssignmentTableViewCell.xib */,
 				40910ACC26B459B60044AF6A /* SchoolGalleryCollectionViewCell.swift */,
 				40910ACD26B459B70044AF6A /* SchoolGalleryCollectionViewCell.xib */,
+				40A3B57A26CE91B000DBA195 /* RickAndMortyTableViewCell.swift */,
+				40A3B57B26CE91B000DBA195 /* RickAndMortyTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +218,8 @@
 				40910AA526AC3B220044AF6A /* TimeTablePost.swift */,
 				40910AA926B29CE30044AF6A /* ToDoItem.swift */,
 				40910AD026B45A740044AF6A /* GalleryImage.swift */,
+				40A3B57226CE87EF00DBA195 /* RickAndMortys.swift */,
+				40A3B57E26CE99A100DBA195 /* Drinks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +243,7 @@
 				4014411A26BADF5B005CCEB6 /* AskDoubtsViewController.swift */,
 				4014412426BC2191005CCEB6 /* FeesViewController.swift */,
 				4014412626BC219F005CCEB6 /* PayOnlineViewController.swift */,
+				40A3B57626CE882F00DBA195 /* EventsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +264,7 @@
 				4014412226BC2116005CCEB6 /* Fees.storyboard */,
 				4014412826BD3469005CCEB6 /* ChangePassword.storyboard */,
 				4045B56626C3C9C800129158 /* Results.storyboard */,
+				40A3B57426CE880D00DBA195 /* Events.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -335,6 +353,7 @@
 				4014412326BC2116005CCEB6 /* Fees.storyboard in Resources */,
 				40910AC326B436170044AF6A /* AssignmentTableViewCell.xib in Resources */,
 				40910AB326B2A8B50044AF6A /* TimeTable.storyboard in Resources */,
+				40A3B57526CE880D00DBA195 /* Events.storyboard in Resources */,
 				40910AC726B454EB0044AF6A /* AskDoubts.storyboard in Resources */,
 				40910AB126B2A7030044AF6A /* DateSheet.storyboard in Resources */,
 				40910ABF26B4351B0044AF6A /* Assignment.storyboard in Resources */,
@@ -344,6 +363,7 @@
 				40910AB726B3E8F90044AF6A /* DateSheetTableViewCell.xib in Resources */,
 				40910ABB26B432CA0044AF6A /* Attendance.storyboard in Resources */,
 				406FDD3126847CFC00D76FF9 /* SchoolMenuCollectionViewCell.xib in Resources */,
+				40A3B57D26CE91B000DBA195 /* RickAndMortyTableViewCell.xib in Resources */,
 				406FDD152681E10C00D76FF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,18 +405,22 @@
 				40910AAA26B29CE40044AF6A /* ToDoItem.swift in Sources */,
 				40FC36E0269834FF009C7E0A /* HolidayViewController.swift in Sources */,
 				4014412726BC219F005CCEB6 /* PayOnlineViewController.swift in Sources */,
+				40A3B57326CE87EF00DBA195 /* RickAndMortys.swift in Sources */,
 				40FC36E4269EC3CA009C7E0A /* QuizQuestions.swift in Sources */,
 				40910AD126B45A740044AF6A /* GalleryImage.swift in Sources */,
 				40910AAC26B29E8B0044AF6A /* DateSheetViewController.swift in Sources */,
+				40A3B57726CE882F00DBA195 /* EventsViewController.swift in Sources */,
 				40FC36E2269EC2EF009C7E0A /* Constant.swift in Sources */,
 				40910ACE26B459B70044AF6A /* SchoolGalleryCollectionViewCell.swift in Sources */,
 				406FDD432695060000D76FF9 /* EditProfileViewController.swift in Sources */,
 				406FDD41268636EC00D76FF9 /* MainNavigationController.swift in Sources */,
 				4014411B26BADF5B005CCEB6 /* AskDoubtsViewController.swift in Sources */,
 				406FDD122681E10C00D76FF9 /* LoginViewController.swift in Sources */,
+				40A3B57F26CE99A100DBA195 /* Drinks.swift in Sources */,
 				4014412526BC2191005CCEB6 /* FeesViewController.swift in Sources */,
 				406FDD3C26849A6E00D76FF9 /* Service.swift in Sources */,
 				406FDD0E2681E10C00D76FF9 /* AppDelegate.swift in Sources */,
+				40A3B57C26CE91B000DBA195 /* RickAndMortyTableViewCell.swift in Sources */,
 				406FDD3F2686368500D76FF9 /* ChangePasswordViewController.swift in Sources */,
 				40910AA626AC3B230044AF6A /* TimeTablePost.swift in Sources */,
 				406FDD102681E10C00D76FF9 /* SceneDelegate.swift in Sources */,
