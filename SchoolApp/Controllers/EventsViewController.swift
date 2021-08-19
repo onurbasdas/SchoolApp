@@ -18,7 +18,7 @@ class EventsViewController: UIViewController {
         Service.getTimeTablePosts { results in
             self.bodyArray.append(contentsOf: results[0...19])
             self.tableRickView.reloadData()
-        }
+        } 
     }
     
 }
