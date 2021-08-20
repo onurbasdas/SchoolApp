@@ -58,6 +58,7 @@
 		40A3B57C26CE91B000DBA195 /* RickAndMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57A26CE91B000DBA195 /* RickAndMortyTableViewCell.swift */; };
 		40A3B57D26CE91B000DBA195 /* RickAndMortyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A3B57B26CE91B000DBA195 /* RickAndMortyTableViewCell.xib */; };
 		40A3B57F26CE99A100DBA195 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57E26CE99A100DBA195 /* Drinks.swift */; };
+		40A3B58126CFE52A00DBA195 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B58026CFE52A00DBA195 /* EventItem.swift */; };
 		40D6084126972B8D00527FB0 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6084026972B8D00527FB0 /* AttendanceViewController.swift */; };
 		40FC36E0269834FF009C7E0A /* HolidayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC36DF269834FF009C7E0A /* HolidayViewController.swift */; };
 		40FC36E2269EC2EF009C7E0A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC36E1269EC2EF009C7E0A /* Constant.swift */; };
@@ -119,6 +120,7 @@
 		40A3B57A26CE91B000DBA195 /* RickAndMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTableViewCell.swift; sourceTree = "<group>"; };
 		40A3B57B26CE91B000DBA195 /* RickAndMortyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RickAndMortyTableViewCell.xib; sourceTree = "<group>"; };
 		40A3B57E26CE99A100DBA195 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		40A3B58026CFE52A00DBA195 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		40D6084026972B8D00527FB0 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
 		40FC36DF269834FF009C7E0A /* HolidayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayViewController.swift; sourceTree = "<group>"; };
 		40FC36E1269EC2EF009C7E0A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				40910AD026B45A740044AF6A /* GalleryImage.swift */,
 				40A3B57226CE87EF00DBA195 /* RickAndMortys.swift */,
 				40A3B57E26CE99A100DBA195 /* Drinks.swift */,
+				40A3B58026CFE52A00DBA195 /* EventItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				406FDD232681F50D00D76FF9 /* functions.swift in Sources */,
 				406FDD3026847CFC00D76FF9 /* SchoolMenuCollectionViewCell.swift in Sources */,
 				40910ACB26B458190044AF6A /* SchoolGalleryViewController.swift in Sources */,
+				40A3B58126CFE52A00DBA195 /* EventItem.swift in Sources */,
 				40910AC526B43A300044AF6A /* AssignmentViewController.swift in Sources */,
 				406FDD37268480C000D76FF9 /* SchoolMenuViewController.swift in Sources */,
 				406FDD3A26849A3C00D76FF9 /* SchoolMenuItems.swift in Sources */,
