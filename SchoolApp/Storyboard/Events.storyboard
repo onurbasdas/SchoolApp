@@ -33,6 +33,9 @@
                                     <constraint firstAttribute="height" constant="44" id="ZQc-G2-Xzd"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="eTS-V9-dMf"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
