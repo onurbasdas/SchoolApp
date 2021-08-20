@@ -68,12 +68,25 @@ class Service {
         }
     }
     
-    static func getRickAndMortys(completion: @escaping ([RickAndMorty]) -> ()) {
+    static func getRickAndMortys(completion: @escaping ([EventItem]) -> ()) {
         AF.request(Constant.RickAndMorty, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
             guard let data = response.data else { return }
             do {
-                let datalist = try JSONDecoder().decode(RickAndMortys.self, from: data)
-                completion(datalist.results)
+                let datalistRick = try JSONDecoder().decode(RickAndMortys.self, from: data)
+                AF.request(Constant.TimeTableURL, method:.get, encoding: JSONEncoding.default).responseJSON { response  in
+                    guard let data = response.data else { return }
+                    do {
+                        let datalistTimeTable = try JSONDecoder().decode([TimeTablePost].self, from: data)
+                        var datalistEvent = [EventItem]()
+                        for item in 0...19{
+                            let dataRick = datalistRick.results[item]
+                            datalistEvent.append(EventItem(id: dataRick.id, name: dataRick.name, status: dataRick.status, gender: dataRick.gender, image: dataRick.image, species: dataRick.species, body: datalistTimeTable[item].body))
+                        }
+                        completion(datalistEvent)                        
+                    } catch  {
+                        print(error.localizedDescription)
+                    }
+                }
             } catch  {
                 print(error.localizedDescription)
             }
