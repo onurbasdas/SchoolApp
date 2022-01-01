@@ -16,19 +16,19 @@ The application was made to learn English words.
 
 ## Screenshots
 
-| ![Search](images/1.png) | ![HomeDark](images/2.png) | 
+| ![Search](image/1.png) | ![HomeDark](image/2.png) | 
 |:---:|:---:|
 
-| ![Search Typing](images/3.png) | ![HomeDark](images/4.png) | 
+| ![Search Typing](image/3.png) | ![HomeDark](image/4.png) | 
 |:---:|:---:|
 
-| ![Result](images/5.png) | ![HomeDark](images/6.png) | 
+| ![Result](image/5.png) | ![HomeDark](image/6.png) | 
 |:---:|:---:|
 
-| ![Result](images/7.png) | ![HomeDark](images/8.png) | 
+| ![Result](image/7.png) | ![HomeDark](image/8.png) | 
 |:---:|:---:|
 
-| ![Result](images/9.png) | ![HomeDark](images/10.png) | 
+| ![Result](image/9.png) | ![HomeDark](image/10.png) | 
 |:---:|:---:|
 
 ## Author
